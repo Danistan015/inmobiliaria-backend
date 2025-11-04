@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inmobiliarias",
+  "info": {
+    "singularName": "inmobiliaria",
+    "pluralName": "inmobiliarias",
+    "displayName": "inmobiliaria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "houseName": {
+      "type": "string"
+    },
+    "houseDescription": {
+      "type": "text"
+    },
+    "housePrice": {
+      "type": "decimal"
+    },
+    "houseType": {
+      "type": "enumeration",
+      "enum": [
+        "Apartamento",
+        "Casa",
+        "Local",
+        "Lote"
+      ]
+    },
+    "houseOperation": {
+      "type": "enumeration",
+      "enum": [
+        "Venta",
+        "Arriendo"
+      ]
+    },
+    "houseArea": {
+      "type": "decimal"
+    },
+    "houseRooms": {
+      "type": "integer"
+    },
+    "houseBathrooms": {
+      "type": "integer"
+    },
+    "houseGarage": {
+      "type": "integer"
+    },
+    "houseStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Disponible",
+        "Vendido",
+        "Arrendado"
+      ]
+    },
+    "houseMainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "houseGallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "houseImage360": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "houseAgent": {
+      "type": "string"
+    },
+    "housePhone": {
+      "type": "string"
+    },
+    "houseFeatured": {
+      "type": "boolean"
+    },
+    "houseDescriptionRich": {
+      "type": "richtext"
+    }
+  }
+}
